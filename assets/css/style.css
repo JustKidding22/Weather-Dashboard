@@ -1,0 +1,80 @@
+.btn-wide {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.current-forecast {
+  list-style: none;
+}
+
+.card {
+  /* margin: 0px 20px 0px 20px; */
+  background-color: rgba(23, 52, 53, 0.836);
+  color: #fff;
+}
+
+.main-container {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.jumbotron {
+  padding: 20px;
+  background-color: #fafafa;
+  color: black;
+  border: 2px solid black;
+}
+
+#icon {
+  position: absolute;
+  top: 0;
+}
+
+.card-text {
+  font-size: smaller;
+}
+
+#currentCity {
+  text-transform: capitalize;
+}
+
+.list-group-item {
+  text-transform: capitalize;
+}
+
+.btn {
+  position: relative;
+  right: 10px;
+}
+
+#cityName {
+  width: 100%;
+}
+
+.list-group-item {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  padding: 0px;
+  margin: 10px;
+  background-color: #a0a0a0;
+  color: white;
+}
+.list-group-item:hover {
+  background-color: rgb(113, 196, 36);
+}
+
+hr {
+  border-bottom: 2px solid black;
+}
+
+p,
+span {
+  font-size: 20px;
+}
+
+#uvIndex {
+  margin-left: 10px;
+  padding: 0px 20px 0px 20px;
+}

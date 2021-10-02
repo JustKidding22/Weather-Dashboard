@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <!-- Create header for application -->
+    <header class="container-fluid text-center text-white bg-primary p-3">
+      <h1>Weather Dashboard</h1>
+    </header>
+    <!-- Create a div container for weather dashboard -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-2 bg-light">
+          <h4 class="mt-2">Search for a City:</h4>
+          <div>
+            <input
+              id="cityName"
+              class="city-name"
+              type="text"
+              class="form-control"
+              placeholder="Enter City"
+            />
+            <button
+              id="searchButton"
+              class="btn btn-primary btn-wide ml-2"
+              type="button"
+            >
+              Search
+            </button>
+          </div>
+          <hr />
+          <div>
+            <ul class="list-group mt-3 mb-3" id="recentSearches"></ul>
+          </div>
+        </div>
+        <div class="col-lg-10 main-container">
+          <div class="jumbotron">
+            <div class="row">
+              <div><h1 class="display-5" id="currentCity"></h1></div>
+              <div><h1 class="display-5" id="currentDate"></h1></div>
+              <div class="current-weather-icon">
+                <img id="icon" src="" alt="weather icon" />
+              </div>
+            </div>
+            <div class="weather-container">
+              <p id="temp"></p>
+              <p id="windSpeed"></p>
+              <p id="humidity"></p>
+              <span
+                >UV Index: <button id="uvIndex" class="btn" disabled></button>
+              </span>
+            </div>
+          </div>
+          <div>
+            <h3>5-Day Forecast</h3>
+          </div>
+          <div class="row justify-content-start">
+            <div class="col-lg-2">
+              <div class="card" style="width: 13rem">
+                <div class="card-body">
+                  <h5 class="card-title" id="day1">09/01/2021</h5>
+                  <div class="current-weather-icon-day-one">
+                    <img id="iconDay1" src="" alt="weather icon day 1" />
+                  </div>
+                  <p class="card-text" id="tempDay1">Temp</p>
+                  <p class="card-text" id="windDay1">Wind</p>
+                  <p class="card-text" id="humidityDay1">Humidity</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="width: 13rem">
+                <div class="card-body">
+                  <h5 class="card-title" id="day2">09/02/2021</h5>
+                  <div class="current-weather-icon-day-two">
+                    <img id="iconDay2" src="" alt="weather icon day 2" />
+                  </div>
+                  <p class="card-text" id="tempDay2">Temp</p>
+                  <p class="card-text" id="windDay2">Wind</p>
+                  <p class="card-text" id="humidityDay2">Humidity</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="width: 13rem">
+                <div class="card-body">
+                  <h5 class="card-title" id="day3">09/03/2021</h5>
+                  <div class="current-weather-icon-day-three">
+                    <img id="iconDay3" src="" alt="weather icon day 3" />
+                  </div>
+                  <p class="card-text" id="tempDay3">Temp</p>
+                  <p class="card-text" id="windDay3">Wind</p>
+                  <p class="card-text" id="humidityDay3">Humidity</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="width: 13rem">
+                <div class="card-body">
+                  <h5 class="card-title" id="day4">09/04/2021</h5>
+                  <div class="current-weather-icon-day-four">
+                    <img id="iconDay4" src="" alt="weather icon day 4" />
+                  </div>
+                  <p class="card-text" id="tempDay4">Temp</p>
+                  <p class="card-text" id="windDay4">Wind</p>
+                  <p class="card-text" id="humidityDay4">Humidity</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="card" style="width: 13rem">
+                <div class="card-body">
+                  <h5 class="card-title" id="day5">09/05/2021</h5>
+                  <div class="current-weather-icon-day-five">
+                    <img id="iconDay5" src="" alt="weather icon day 5" />
+                  </div>
+                  <p class="card-text" id="tempDay5">Temp</p>
+                  <p class="card-text" id="windDay5">Wind</p>
+                  <p class="card-text" id="humidityDay5">Humidity</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
